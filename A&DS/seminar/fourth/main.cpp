@@ -33,10 +33,10 @@ int main()
     printf("\n");
     //---------------------------------
     n--;
-    for(int i = 6; i >= 0; i--)
+    for(int i = 7; i >= 0; i--)
     {
         for(int j = 0; j < n; j++)
-            for(int k = 0; k < n - i; k++)
+            for(int k = 0; k < n - j; k++)
                 if(mas[k][i] > mas[k + 1][i])
                     swap(mas[k], mas[k + 1]);
     }
